@@ -35,10 +35,12 @@ public class RoleFilter extends AccessControlFilter {
 	@Override
 	protected boolean isAccessAllowed(ServletRequest request,
 			ServletResponse response, Object mappedValue) throws Exception {
+		//取到参数[2008,2009] ，强制转换判断。
 		String[] arra = (String[])mappedValue;
 		
 		Subject subject = getSubject(request, response);
 		for (String role : arra) {
+			//判断是否有拥有当前权限，有则返回true
 			if(subject.hasRole("role:" + role)){
 				return true;
 			}
