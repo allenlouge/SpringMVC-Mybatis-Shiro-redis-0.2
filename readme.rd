@@ -1,3 +1,8 @@
+娄阁20190215：
+mysql 5.1.21-》8.0.11
+redis Redis-x64-3.2.100
+tomcat apache-tomcat-8.5.37
+
 本项目详细介绍请看：http://www.sojson.com/shiro （强烈推荐）
 
 Demo已经部署到线上，地址是http://shiro.itboy.net，
