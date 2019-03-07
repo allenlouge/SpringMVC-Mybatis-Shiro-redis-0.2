@@ -40,4 +40,7 @@ public class DBConnectionTestDemo {
             e.printStackTrace();
         }
     }
+	public static int add(int a,int b) {
+		return a + b;
+	}
 }
